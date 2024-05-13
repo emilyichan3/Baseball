@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: #ebebeb;
+}
+header{
+    grid-area: h;
+}
+nav{
+    grid-area: n;
+}
+main{
+    grid-area: m;
+}
+aside{
+    grid-area: a;
+}
+footer{
+    grid-area: f;
+}
+aside{
+    display: none;
+}
+header,
+nav,
+main,
+footer {
+    display: block;
+}
+#wrapper{
+    color: #ffffff;
+    display: grid;
+    grid-template: 
+        "h "
+        "n "
+        "m "
+        "f ";
+} 
+header{      
+    color: #333333;
+    background-color: #ffffff;
+    background-size: auto 100%;
+    background-image: url(/images/logo.png);
+    background-repeat: no-repeat;
+    padding: 0.5em 0 0.5em 9em;
+}
+nav ul {
+    background-color: #333333;
+    list-style-type: none;
+    padding-left: 0;
+    border-top: 1px solid #eeeeee;
+}
+nav li {
+    border-bottom: 1px solid #eeeeee;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+nav a {
+    color: #337ab7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside {
+    text-align: center;
+  }
+main {
+    color: #111111;
+    padding: 0.5em;
+}
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    font-weight: 500;
+}
+h2 {
+    color: #747474;
+}
+h4 {
+    color: #696969;
+}
+footer {
+    background-color: antiquewhite;
+    color: #111111;
+    font-size: 70%;
+    text-align: center;
+    padding: 0.5em 0;
+}
+.kword {
+    color: #db0d0d;
+    font-weight: bold;    
+}
+.small-desc {
+    font-size: 0.9em;
+}
+.entry-content img {
+ height: auto;
+ max-width: 100%;
+}
+.td_img_desc {
+    padding: 5px 20px 10px;
+    text-align: center;
+    color: #777;
+    max-width: 400px;
+}
+@media (min-width: 734px) {
+    #wrapper {
+        grid-template:
+        " h   h "
+        " n   n "
+        " m   m "
+        " f   f "
+        / 75% 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    nav li {
+        min-width: 5em;
+    }    
+    #wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        grid-template:
+        " h   h   h"
+        " n   m   m"
+        " f   f   f"
+        / 130px 1fr 15%;
+    }
+}
