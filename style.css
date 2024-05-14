@@ -110,6 +110,36 @@ footer {
     color: #777;
     max-width: 400px;
 }
+.TeamTable th {
+    background-color: #424242;
+    line-height: 150%;
+    white-space: nowrap;
+    color: #ffffff;
+    padding:8px 10px;
+}
+.TeamTable td {
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    vertical-align: top;
+    line-height: 150%;
+    text-align: center;
+    padding:8px 10px;
+}
+.TeamTable .sticky{
+    position: sticky;
+    left: 0;
+    z-index: 2;
+}
+.TeamTable { 
+    max-width: 400px;
+    width:100%; 
+    overflow:scroll; 
+}
+.TeamTable table {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 @media (min-width: 734px) {
     #wrapper {
         grid-template:
@@ -118,6 +148,9 @@ footer {
         " m   m "
         " f   f "
         / 75% 25%;
+    }
+    .TeamTable { 
+        max-width: 100%;
     }
 }
 
@@ -140,4 +173,7 @@ footer {
         " f   f   f"
         / 130px 1fr 15%;
     }
+    .TeamTable { 
+        max-width: 100%;        
+    }    
 }
