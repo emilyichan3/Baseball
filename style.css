@@ -49,8 +49,14 @@ header{
     background-repeat: no-repeat;
     padding: 0.5em 0 0.5em 9em;
 }
+.global-header {
+    position: sticky;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
 nav ul {
-    background-color: #333333;
+    background-color: #41586c;
     list-style-type: none;
     padding-left: 0;
     border-top: 1px solid #eeeeee;
@@ -62,7 +68,7 @@ nav li {
     padding-bottom: 0.5em;
   }
 nav a {
-    color: #337ab7;
+    color: #b5fada;
     text-decoration: none;
     font-weight: bold;
 }
@@ -81,7 +87,7 @@ h1 {
     font-weight: 500;
 }
 h2 {
-    color: #747474;
+    color: #696969;
 }
 h4 {
     color: #696969;
@@ -177,8 +183,15 @@ footer {
     text-align: center;
     font-size: 1.1rem;
 }
+.f-container {
+    width: 100%;
+} 
+.iframe-video {
+    width: 100%;
+    height: 315px;
+}
 
-@media (min-width: 734px) {
+@media (min-width: 768px) {
     #wrapper {
         grid-template:
         " h   h "
@@ -193,16 +206,23 @@ footer {
     .StadiumsList .item{
         width: 50%;
     }
+    .global-header {
+        position: relative;
+    }
+    .iframe-video {
+        width:560px;
+    }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) { 
     nav ul {
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        flex-flow: row nowrap;
+        justify-content: space-around;
     }
     nav li {
         min-width: 5em;
+        border-bottom: none;
     }    
     #wrapper {
         margin-left: auto;
@@ -210,7 +230,8 @@ footer {
         width: 90%;
         grid-template:
         " h   h   h"
-        " n   m   m"
+        " n   n   n"
+        " m   m   m"
         " f   f   f"
         / 130px 1fr 15%;
     }
@@ -220,5 +241,7 @@ footer {
     .StadiumsList .item{
         width: 25%;
     }
+    .iframe-video {
+        width:560px;
+    }
 }    
-}
