@@ -56,7 +56,7 @@ header{
     top: 0;
 }
 nav ul {
-    background-color: #41586c;
+    background-color: #416c64;
     list-style-type: none;
     padding-left: 0;
     border-top: 1px solid #eeeeee;
@@ -68,7 +68,7 @@ nav li {
     padding-bottom: 0.5em;
   }
 nav a {
-    color: #b5fada;
+    color: #03f5f5;
     text-decoration: none;
     font-weight: bold;
 }
@@ -168,9 +168,7 @@ footer {
     color:#ffffff;
     line-height: 36px;
     text-align: center;
-    font-size: 1.125rem;
     font-weight: bold;
-    letter-spacing: 0.1em;
 }
 .StadiumsList dl {
     height: 100%;
@@ -181,7 +179,6 @@ footer {
     padding: 0 20px;
     margin-bottom: 5px;
     text-align: center;
-    font-size: 1.1rem;
 }
 .f-container {
     width: 100%;
@@ -190,7 +187,6 @@ footer {
     width: 100%;
     height: 315px;
 }
-
 @media (min-width: 768px) {
     #wrapper {
         grid-template:
@@ -243,5 +239,9 @@ footer {
     }
     .iframe-video {
         width:560px;
+    }
+    .global-header {
+        /* position: fixed; */
+        background-color:rgba(255,255,255,.7);
     }
 }    
