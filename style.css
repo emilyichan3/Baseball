@@ -75,7 +75,6 @@ nav a:hover {
     font-weight: bold;
     text-decoration:underline;
 }
-
 main {
     color: #111111;
     padding: 0.5em;
@@ -210,6 +209,7 @@ footer a{
         " f   f "
         / 75% 25%;
     }
+
     .table_scroll_ctrl {
         display: block;
     }
