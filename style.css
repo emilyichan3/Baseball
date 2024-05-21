@@ -17,15 +17,12 @@ nav{
 main{
     grid-area: m;
 }
-aside{
-    grid-area: a;
-}
 footer{
     grid-area: f;
 }
-aside{
+/* aside{
     display: none;
-}
+} */
 header,
 nav,
 main,
@@ -33,6 +30,7 @@ footer {
     display: block;
 }
 #wrapper{
+    min-width: 344px;
     color: #ffffff;
     display: grid;
     grid-template: 
@@ -42,12 +40,12 @@ footer {
         "f ";
 } 
 header{      
-    color: #333333;
+    color: #00005D;
     background-color: #ffffff;
     background-size: auto 100%;
     background-image: url(./images/logo.png);
     background-repeat: no-repeat;
-    padding: 0.5em 0 0.5em 9em;
+    padding: 0.9em 0 0.1em 9em;
 }
 .global-header {
     position: sticky;
@@ -56,7 +54,8 @@ header{
     top: 0;
 }
 nav ul {
-    background-color: #416c64;
+    /* background-color: #416c64; */
+    background-color: #054b2e;
     list-style-type: none;
     padding-left: 0;
     border-top: 1px solid #eeeeee;
@@ -68,14 +67,13 @@ nav li {
     padding-bottom: 0.5em;
   }
 nav a {
-    color: #03f5f5;
+    color: #FFFF00;
     text-decoration: none;
+}
+nav a:hover {
     font-weight: bold;
 }
 
-aside {
-    text-align: center;
-  }
 main {
     color: #111111;
     padding: 0.5em;
@@ -93,11 +91,15 @@ h4 {
     color: #696969;
 }
 footer {
-    background-color: antiquewhite;
-    color: #111111;
+    background-color: #416c64;
+    color: #eeeeee;
     font-size: 70%;
     text-align: center;
     padding: 0.5em 0;
+    font-weight: bold;
+}
+footer a{
+    color: #FFFF00;
 }
 .kword {
     color: #db0d0d;
@@ -147,6 +149,12 @@ footer {
     margin-right: 10px;
     width: 100%;
     overflow:scroll; 
+}
+.TeamTable img {
+    transition-duration: 350ms;
+}
+.TeamTable img:hover {
+    transform: rotate(15deg);
 }
 .StadiumsList {
     margin: 0 -10px;
@@ -203,7 +211,7 @@ footer {
         width: 50%;
     }
     .global-header {
-        position: relative;
+        position: sticky;
     }
     .iframe-video {
         width:560px;
@@ -241,7 +249,7 @@ footer {
         width:560px;
     }
     .global-header {
-        /* position: fixed; */
+        position: relative;
         background-color:rgba(255,255,255,.7);
     }
 }    
