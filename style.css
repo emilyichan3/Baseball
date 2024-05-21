@@ -92,12 +92,11 @@ h4 {
     color: #696969;
 }
 footer {
-    background-color: #416c64;
-    color: #eeeeee;
+    background-color: #4a787e;
+    color: #ffffff;
     font-size: 70%;
     text-align: center;
     padding: 0.5em 0;
-    font-weight: bold;
 }
 footer a{
     color: #FFFF00;
@@ -118,6 +117,12 @@ footer a{
     text-align: center;
     color: #777;
     max-width: 400px;
+}
+.td_iframe_desc {
+    padding: 1px 5px 5px;
+    text-align: center;
+    color: #777;
+    /* max-width: 400px; */
 }
 .TeamTable th {
     background-color: #828282;
