@@ -67,11 +67,13 @@ nav li {
     padding-bottom: 0.5em;
   }
 nav a {
-    color: #FFFF00;
+    color: #ffffff;
     text-decoration: none;
+    transition-duration: 100ms;
 }
 nav a:hover {
     font-weight: bold;
+    text-decoration:underline;
 }
 
 main {
