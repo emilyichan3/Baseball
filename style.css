@@ -156,6 +156,10 @@ footer a{
 .TeamTable img:hover {
     transform: rotate(15deg);
 }
+.table_scroll_ctrl {
+    display: block;
+    text-align: right;
+}
 .StadiumsList {
     margin: 0 -10px;
     display: flex;
@@ -204,6 +208,9 @@ footer a{
         " f   f "
         / 75% 25%;
     }
+    .table_scroll_ctrl {
+        display: block;
+    }
     .TeamTable { 
         max-width: 100%;
     }
@@ -238,6 +245,9 @@ footer a{
         " m   m   m"
         " f   f   f"
         / 130px 1fr 15%;
+    }
+    .table_scroll_ctrl {
+        display: none;
     }
     .TeamTable { 
         max-width: 100%;        
