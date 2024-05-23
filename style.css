@@ -78,7 +78,7 @@ nav a:hover {
 }
 main {
     color: #111111;
-    padding: 0.5em;
+    padding: 0.5em 0.5em 1em 0.5em;
 }
 h1 {
     font-size: 30px;
