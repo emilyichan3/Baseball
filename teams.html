@@ -3,20 +3,20 @@
 <head>
     <title>teams</title>
     <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
         <header class="global-header">
+            <img src="./images/logo.png" alt="TaiwanBaseball_logo">
             <h1>Taiwan Baseball</h1>
         </header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="league.html">Leagues</a></li>
-                <li><a href="teams.html">Teams</a></li>
+                <li><a href="teams.html" class="page-active">Teams</a></li>
                 <li><a href="stadiums.html">Stadiums</a></li>
             </ul>
         </nav>
@@ -29,9 +29,9 @@
             </div>
             <div class="TeamTable">
                 <div class="TableWrap">
-                <!-- to make table fit into the div, so it won't be overflow. -->
+                <!-- to make table fit into the div, so it won't overflow. -->
                     <table>
-                        <tbody>
+                        <thead>
                             <tr>
                                 <th>Logo</th>
                                 <th>Name</th>
@@ -41,6 +41,17 @@
                                 <th>Joined</th>
                                 <th>Webside</th>
                             </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                <th>Logo</th>
+                                <th>Name</th>
+                                <th>Location</th>
+                                <th>Home of Stadium</th>
+                                <th>Founded</th>
+                                <th>Joined</th>
+                                <th>Webside</th>
+                            </tr> -->
                             <tr>
                                 <td><img src="images/CTBC_Brothers_Baseball_logo.png" width="100" height="100" alt="brothers_team"></td>
                                 <td>CTBC Brothers</td>
