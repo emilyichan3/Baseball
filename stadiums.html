@@ -7,24 +7,23 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <header class="global-header">
+        <!-- logo - use image tag instead of background-image to avoid duplicated area between h1 and image in the small screen -->
+        <img src="./images/logo.png" alt="TaiwanBaseball_logo">
+        <h1>Taiwan Baseball</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="league.html">Leagues</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="stadiums.html" class="page-active">Stadiums</a></li>
+        </ul>
+    </nav>
     <div id="wrapper">
-        <header class="global-header">
-            <!-- logo - use image tag instead of background-image to avoid duplicated area between h1 and image in the small screen -->
-            <img src="./images/logo.png" alt="TaiwanBaseball_logo">
-            <h1>Taiwan Baseball</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="league.html">Leagues</a></li>
-                <li><a href="teams.html">Teams</a></li>
-                <li><a href="stadiums.html" class="page-active">Stadiums</a></li>
-            </ul>
-        </nav>
         <main>
             <h1>Stadiums</h1>
             <p>The Chinese Professional Baseball League (CPBL) in Taiwan uses below stadiums for its games.</p>
-            <div> &nbsp;</div>
             <div class="StadiumsList">
                 <div class="item">
                     <dl>
@@ -108,9 +107,9 @@
             </div>
 
         </main>
-        <footer>
-            <p>Yijung's UCD Ireland Website Assignment 2024. Please <a href="mailto:emilyichan3@gmail.com">Contact Me</a> for further queries.</p>
-        </footer>
     </div>
+    <footer>
+        <p>Yijung's UCD Ireland Website Assignment 2024. Please <a href="mailto:emilyichan3@gmail.com">Contact Me</a> for further queries.</p>
+    </footer>
 </body>
 </html>

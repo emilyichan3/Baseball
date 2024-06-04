@@ -7,45 +7,51 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <header class="global-header">
+        <!-- logo - use image tag instead of background-image to avoid duplicated area between h1 and image in the small screen -->
+        <img src="./images/logo.png" alt="TaiwanBaseball_logo">
+        <h1>Taiwan Baseball</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="league.html" class="page-active">Leagues</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="stadiums.html">Stadiums</a></li>
+        </ul>
+    </nav>
     <div id="wrapper">
-        <header class="global-header">
-            <!-- logo - use image tag instead of background-image to avoid duplicated area between h1 and image in the small screen -->
-            <img src="./images/logo.png" alt="TaiwanBaseball_logo">
-            <h1>Taiwan Baseball</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="league.html" class="page-active">Leagues</a></li>
-                <li><a href="teams.html">Teams</a></li>
-                <li><a href="stadiums.html">Stadiums</a></li>
-            </ul>
-        </nav>
-        <main class="main-content">
+        <main>
             <h1>Leagues</h1>
-            <img src="images/league.jpg" alt="baseballleague">
-            <p>In Taiwan, there is one primary professional baseball league, which is the <a href="https://en.cpbl.com.tw/" target="_blank">Chinese Professional Baseball League (CPBL)</a>. The CPBL is the highest level of professional baseball in Taiwan and consists of several teams competing in a league format.</p>
-            <div> &nbsp;</div>
-            <p>Additionally, there are amateur and youth baseball leagues in Taiwan, organized at various levels, including schools, universities, and community clubs. These leagues serve as important avenues for developing young talent and promoting the sport at the grassroots level. While they may not receive as much attention as the CPBL, they play a vital role in nurturing the next generation of Taiwanese baseball players.</p>
-            <div> &nbsp;</div>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="f-container">
-                                <iframe class="iframe-video" src="https://www.youtube.com/embed/Bz_p2-Vyj5w?si=YJuZrafBe4VeVQXB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="td_iframe_desc">A championship match is hosted by Chinese Professional Baseball League (CPBL).</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="main-content">
+                <div>
+                    <img src="images/league.jpg" alt="baseballleague">
+                </div>
+                <div>
+                    <p>In Taiwan, there is one primary professional baseball league, which is the <a href="https://en.cpbl.com.tw/" target="_blank">Chinese Professional Baseball League (CPBL)</a>. The CPBL is the highest level of professional baseball in Taiwan and consists of several teams competing in a league format.</p>
+                    <p>Additionally, there are amateur and youth baseball leagues in Taiwan, organized at various levels, including schools, universities, and community clubs. These leagues serve as important avenues for developing young talent and promoting the sport at the grassroots level. While they may not receive as much attention as the CPBL, they play a vital role in nurturing the next generation of Taiwanese baseball players.</p>
+                </div>
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="f-container">
+                                        <iframe class="iframe-video" src="https://www.youtube.com/embed/Bz_p2-Vyj5w?si=YJuZrafBe4VeVQXB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td_iframe_desc">A championship match is hosted by Chinese Professional Baseball League (CPBL).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </main>
-        <footer>
-            <p>Yijung's UCD Ireland Website Assignment 2024. Please <a href="mailto:emilyichan3@gmail.com">Contact Me</a> for further queries.</p>
-        </footer>
     </div>
+    <footer>
+        <p>Yijung's UCD Ireland Website Assignment 2024. Please <a href="mailto:emilyichan3@gmail.com">Contact Me</a> for further queries.</p>
+    </footer>
 </body>
 </html>

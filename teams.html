@@ -7,24 +7,23 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <header class="global-header">
+        <!-- logo - use image tag instead of background-image to avoid duplicated area between h1 and image in the small screen -->
+        <img src="./images/logo.png" alt="TaiwanBaseball_logo">
+        <h1>Taiwan Baseball</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="league.html">Leagues</a></li>
+            <li><a href="teams.html" class="page-active">Teams</a></li>
+            <li><a href="stadiums.html">Stadiums</a></li>
+        </ul>
+    </nav>
     <div id="wrapper">
-        <header class="global-header">
-            <!-- logo - use image tag instead of background-image to avoid duplicated area between h1 and image in the small screen -->
-            <img src="./images/logo.png" alt="TaiwanBaseball_logo">
-            <h1>Taiwan Baseball</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="league.html">Leagues</a></li>
-                <li><a href="teams.html" class="page-active">Teams</a></li>
-                <li><a href="stadiums.html">Stadiums</a></li>
-            </ul>
-        </nav>
         <main>
             <h1>Teams</h1>
             <p>The Chinese Professional Baseball League (CPBL) in Taiwan typically consists of six teams. These teams compete against each other in the league's regular season and playoffs to determine the champion.</p>
-            <div> &nbsp;</div>
             <div class="table_scroll_ctrl">
                 <p>*Please swipe the table with your finger or mouse.</p>
             </div>
@@ -38,28 +37,15 @@
                                 <th>Name</th>
                                 <th>Location</th>
                                 <th>Home of Stadium</th>
-                                <th>Founded</th>
-                                <th>Joined</th>
                                 <th>Webside</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- <tr>
-                                <th>Logo</th>
-                                <th>Name</th>
-                                <th>Location</th>
-                                <th>Home of Stadium</th>
-                                <th>Founded</th>
-                                <th>Joined</th>
-                                <th>Webside</th>
-                            </tr> -->
                             <tr>
                                 <td><img src="images/CTBC_Brothers_Baseball_logo.png" width="100" height="100" alt="brothers_team"></td>
                                 <td>CTBC Brothers</td>
                                 <td>Taichung</td>
                                 <td>Taichung Intercontinental Baseball Stadium</td>
-                                <td>1984</td>
-                                <td>1990</td>
                                 <td><a href="https://www.brothers.tw/" target="_blank">https://www.brothers.tw/</a></td>
                             </tr>
                             <tr>
@@ -67,8 +53,6 @@
                                 <td>Fubon Guardians</td>
                                 <td>New Taipei City</td>
                                 <td>Xinzhuang Baseball Stadium</td>
-                                <td>1989</td>
-                                <td>1993</td>
                                 <td><a href="https://www.fubonguardians.com/" target="_blank">https://www.fubonguardians.com/</a></td>
                             </tr>
                             <tr>
@@ -76,8 +60,6 @@
                                 <td>Rakuten Monkeys</td>
                                 <td>Taoyuan City</td>
                                 <td>Rakuten Taoyuan Baseball Stadium</td>
-                                <td>2003</td>
-                                <td>2003</td>
                                 <td><a href="https://monkeys.rakuten.com.tw/" target="_blank">https://monkeys.rakuten.com.tw/</a></td>
                             </tr>
                             <tr>
@@ -85,8 +67,6 @@
                                 <td>TSG Hawks</td>
                                 <td>Kaohsiung City</td>
                                 <td>Kaohsiung Chengching Lake Baseball Field</td>
-                                <td>2003</td>
-                                <td>2003</td>
                                 <td><a href="https://www.tsghawks.com/" target="_blank">https://www.tsghawks.com/</a></td>
                             </tr>
                             <tr>
@@ -94,8 +74,6 @@
                                 <td>Uni-President 7-Eleven Lions</td>
                                 <td>Tainan City</td>
                                 <td>Tainan Municipal Baseball Stadium</td>
-                                <td>1989</td>
-                                <td>1990</td>
                                 <td><a href="https://www.uni-lions.com.tw/" target="_blank">https://www.uni-lions.com.tw/</a></td>
                             </tr>
                             <tr>
@@ -103,8 +81,6 @@
                                 <td>Wei Chuan Dragons</td>
                                 <td>Tainan City</td>
                                 <td>Taipei Tianmu Baseball Stadium</td>
-                                <td>2019(refounded)</td>
-                                <td>2020(reactivated)</td>
                                 <td><a href="https://www.wdragons.com/CWS/" target="_blank">https://www.wdragons.com/CWS/</a></td>
                             </tr>
                         </tbody>
@@ -112,9 +88,9 @@
                 </div>
             </div>
         </main>
-        <footer>
-            <p>Yijung's UCD Ireland Website Assignment 2024. Please <a href="mailto:emilyichan3@gmail.com">Contact Me</a> for further queries.</p>
-        </footer>
     </div>
+    <footer>
+        <p>Yijung's UCD Ireland Website Assignment 2024. Please <a href="mailto:emilyichan3@gmail.com">Contact Me</a> for further queries.</p>
+    </footer>
 </body>
 </html>

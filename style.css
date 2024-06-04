@@ -1,22 +1,29 @@
+:root {
+    --main-bg-color: #fdf9f3;
+}
 * {
     box-sizing: border-box;
     margin: 0;
 }
 body{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     line-height: 1.4;
-    background-color: #fff;
+    background-color: var(--main-bg-color);
+    min-width: 265px;
 }
 #wrapper{
-    min-width: 344px;
-    color: #ffffff;
+    width: 100%;
+    padding: 0.5em 0;
+    background-color: var(--main-bg-color);
 } 
 header{      
-    color: #00005D;
+    color: #333;
     display: inline-block;;
-    background-color: #ffffff;
-    padding: 0.5em 1em;
+    background-color: var(--main-bg-color);
+    padding: 0 1em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
 }
 .global-header {
     display: flex;
@@ -29,9 +36,10 @@ header{
     padding: 0.5em 10px;
     margin: 0;
 }
-
-nav ul {
+nav {
     background-color: #054b2e;
+}
+nav ul {
     list-style-type: none;
     border-top: 1px solid #eeeeee;
     margin: 0;
@@ -64,11 +72,16 @@ h1 {
     line-height: 1.1;
     font-weight: 500;
 }
-h2 {
+h2, h4 {
     color: #696969;
 }
-h4 {
-    color: #696969;
+
+h1, h2{
+    padding-bottom: 5px;
+}
+
+p {
+    padding-bottom: 15px;
 }
 footer {
     background-color: #4a787e;
@@ -80,6 +93,9 @@ footer {
 footer a{
     color: #FFFF00;
 }
+footer p{
+    padding: 0;
+}
 .page-active{
     background-color: #4a6e59;
 }
@@ -90,15 +106,17 @@ footer a{
 .small-desc {
     font-size: 0.9em;
 }
+.main-content div{
+    width: 100%;
+}
 .main-content img {
  height: auto;
- max-width: 100%;
+ width: 100%;
 }
 .td_img_desc {
-    padding: 5px 20px 10px;
+    padding-bottom: 5px;
     text-align: center;
     color: #777;
-    max-width: 400px;
 }
 .td_iframe_desc {
     padding: 1px 5px 5px;
@@ -110,11 +128,11 @@ footer a{
     line-height: 150%;
     white-space: nowrap;
     color: #ffffff;
+    letter-spacing: 0.1em;
     padding:8px 10px;
 }
 .TeamTable td {
     border-bottom: 1px solid #e5e5e5;
-    background-color: #ffffff;
     vertical-align: top;
     line-height: 150%;
     text-align: center;
@@ -130,18 +148,10 @@ footer a{
     width: 100%;
     overflow:scroll; 
 }
-
 .TeamTable table {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px;
     width: 100%;
     overflow:scroll; 
-}
-.TeamTable img {
-    transition-duration: 350ms;
-}
-.TeamTable img:hover {
-    transform: rotate(15deg);
 }
 .table_scroll_ctrl {
     display: block;
@@ -150,10 +160,8 @@ footer a{
 .StadiumsList {
     margin: 0 -10px;
     display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    align-content: center;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 .StadiumsList .item{
     width: 100%;
@@ -161,10 +169,11 @@ footer a{
     margin: 10px 0;
 }
 .StadiumsList dt {
-    padding: 0 20px;
-    margin-bottom: 5px;
     background-color: #828282;
+    margin-bottom: 5px;
+    padding: 0 0px;    
     color:#ffffff;
+    letter-spacing: 0.1em;
     line-height: 36px;
     text-align: center;
     font-weight: bold;
@@ -172,7 +181,7 @@ footer a{
 .StadiumsList dl {
     height: 100%;
     padding-bottom: 10px;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px #1111112c
 }
 .StadiumsList dd {
     padding: 0 20px;
@@ -186,67 +195,121 @@ footer a{
     width: 100%;
     height: 315px;
 }
-@media (min-width: 768px) {
-    .table_scroll_ctrl {
-        display: block;
-    }
-    .TeamTable { 
-        max-width: 100%;
-    }
-    .StadiumsList .item{
-        width: 50%;
-    }
-    .global-header {
-        position: sticky;
-    }
-    .iframe-video {
-        width:560px;
-    }
-}
-
-@media (min-width: 992px) { 
+@media (min-width: 767px) {
     nav ul {
         display: flex;
         flex-flow: row nowrap;
         justify-content: start;
+        border-top: unset;
     }
     nav li {
         border-bottom: none;
         padding: 0;
+        font-size: 18px;
     }    
     nav li a {
         width: 120px;
         padding: 10px;
     }
     #wrapper {
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 18px;
+    }
+    .main-content img {
+        height: auto;
         width: 90%;
     }
-    .TeamTable { 
-        overflow:auto;
-    }
-    .TeamTable .TableWrap{ 
-        overflow:auto; 
-    }
-    .TeamTable table {
-        margin:0 ;
-        overflow:auto; 
+    .main-content .full-size img{
+        height: auto;
+        width: 100%;
     }
     .table_scroll_ctrl {
         display: none;
-    }
+    } 
     .TeamTable { 
-        max-width: 100%;        
-    }    
+        overflow: auto;
+        max-width: 100%;  
+    }
+    .TeamTable .TableWrap{ 
+        overflow: auto; 
+    }
+    .TeamTable table {
+        margin:0 ;
+        overflow: auto; 
+    }
     .StadiumsList .item{
-        width: 25%;
+        width: 50%;
+    }
+
+    .iframe-video {
+        width:560px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .global-header {
+        position: relative;
+        margin: 0 auto;
+        width: 970px;
+    }
+    nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: left;
+        margin: 0 auto;
+        width: 970px;
+    }
+    nav li {
+        border-bottom: none;
+        padding: 0;
+        font-size: 18px;
+    }    
+    nav li a {
+        width: 120px;
+        padding: 10px;
+    }
+    #wrapper {
+        margin: 0 auto;
+        width: 970px;
+        font-size: 18px;
+    }
+    .main-content .columnstwo {
+        display: grid;
+        grid-template-columns: 70% 1fr;
+        padding: 0;
+    }
+    .main-content img {
+        height: auto;
+        width: 90%;
+    }
+    .main-content .full-size img{
+        height: auto;
+        width: 100%;
+    }
+    .table_scroll_ctrl {
+        display: none;
+    } 
+    .TeamTable { 
+        overflow: auto;
+        max-width: 100%;  
+    }
+    .TeamTable .TableWrap{ 
+        overflow: auto; 
+    }
+    .TeamTable table {
+        margin:0 ;
+        overflow: auto; 
+    }
+    .TeamTable img {
+    transition-duration: 350ms;
+    }
+    .TeamTable img:hover {
+        transform: rotate(15deg);
+    }
+    .StadiumsList .item{
+        width: 50%;
     }
     .iframe-video {
         width:560px;
     }
-    .global-header {
-        position: relative;
-        background-color:rgba(255,255,255,.7);
-    }
+
 }    
